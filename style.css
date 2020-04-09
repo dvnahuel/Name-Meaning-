@@ -1,180 +1,32 @@
-.inputname {
-	margin-bottom: 240px;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400&display=swap');
+
+body {
+	padding: 0;
+	margin: 0;
+	background-color: #33313b;
+	color: #e6f5ff;
+	font-family: 'Montserrat';
 }
 
-
-.significado {
-	padding-top: 190px;
-}
-
-
-input {
-
-	border:2px solid rgba(255,255,255,.5);
-	font-size:1.75em;
-	padding:.25em .5em .3125em;
-	color:rgba(255,255,255,.5);
-	border-radius:.25em;
-	background:transparent;
-	transition:all .100s;
-
-	&:focus{
-		outline:none;
-		color:rgba(255,255,255,.75);
-		border-color:rgba(255,255,255,.75);
-	}
-
-	&.keyup {
-		color:white;
-		border-color:white;
-		text-shadow:0 0 .125em white;
-		box-shadow:0 0 .25em white,inset 0 0 .25em white;
-	}
-}
-
-
-canvas {
-	position:absolute;
-	left:0;
-	right:0;
-	top:0;
-	bottom:0;
-	pointer-events:none;
+#container {
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	margin-top: 20vh;
 }
 
 input {
-	font-family: "Arial Rounded MT Bold","Helvetica Rounded",Arial,sans-serif;
-}
-
-$placeholder-color:rgba(255,255,255,.5);
-
-::-webkit-input-placeholder {
-	color:$placeholder-color;
-	text-shadow:0 0 .125em transparent;
-	transition:all .25s;
-}
-input:focus::-webkit-input-placeholder {
-	opacity:.5;
-}
-
-::-moz-placeholder {
-	color:$placeholder-color;
-	text-shadow:0 0 .125em transparent;
-	transition:all .25s;
-}
-input:focus::-moz-placeholder {
-	opacity:.5;
-}
-
-:-ms-input-placeholder {
-	color:$placeholder-color;
-	text-shadow:0 0 .125em transparent;
-	transition:all .25s;
-}
-input:focus:-ms-input-placeholder {
-	opacity:.5;
-}
-
-html,body {
-	height:100%;
-	overflow:hidden;
-}
-
-html {
-	background:#333 url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/68397/forest-fly-agaric-fog-moss-fliegenpilz.jpg) no-repeat center bottom;
-	background-size:cover;
-}
-
-body {
-	box-shadow:inset 0 0 5em #000;
-}
-
-input {
-	position:absolute;
-	box-sizing:border-box;
-	bottom: 4em;
-	left:50%;
-	width:11em;
-	margin-left:-5.5em;
-}
-body {
-  margin: 0;
-  padding: 0;
-}
-
-
-h1 {
-  font-family:'Poiret One';
-  font-size: 600%;
-  padding-top: 100px;
-}
-
-
-p {
-	font-family:'Poiret One';
-	font-size: 220%;
-	font-weight: lighter;
-	padding-top: 14px;
-}
-
-
-#gradient {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  background: linear-gradient(270deg, #003366, #b27000, #06617d, #067370);
-  background-size: 800% 800%;
-  -webkit-animation: colors 30s ease infinite;
-  -moz-animation: colors 30s ease infinite;
-  animation: colors 30s ease infinite;
-}
-
-@-webkit-keyframes colors {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@-moz-keyframes colors {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-@keyframes colors {
-  0%{background-position:0% 50%}
-  50%{background-position:100% 50%}
-  100%{background-position:0% 50%}
-}
-
-
-@import "lesshat";
-
-body {
-  background: #333;
-  font-family: sans-serif;
-}
-
-@text-end: #004f75;
-@text-start: #87d8ff;
-
-@keyframes blink {
-  0% { opacity: 0.0; }
-  50% { opacity: 1.0; }
-  100% { opacity: 0.0; }
-}
-
-@keyframes letter {
-  0% {
-    color: @text-start;
-    transform: scale(2.0, 2.0) translateX(7px);
-  }
-  100% {
-    color: @text-end;
-    transform: scale(1, 1) translateX(0px);
-  }
-}
-
-{
-  outline: none;
+  width: 200px;
+  height: 40px;
+  font-size: 16px;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
   border: none;
-  padding: 0;
+  border-bottom: 1px solid #CCC;
+	background-color: transparent;
+	color: #e6f5ff;
+}
+input:focus {
+  outline: none;
+  border-bottom: 1px solid #28a2a2;
 }
