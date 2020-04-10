@@ -18,8 +18,9 @@ function getName(inputname) {
   var answer = "";
 
   switch (inputname) {
+    //NOMBRE VARONES
     case 'nahuel':
-      answer =  'Nombre propio masculino. Su significado es ""gran felino"" refiriéndose al jaguar o yaguareté del norte de Argentina, que es el mayor félido de América y el tercero del mundo.';
+      answer =  'Nombre propio masculino. Su significado es "gran felino" refiriéndose al jaguar o yaguareté del norte de Argentina, que es el mayor félido de América y el tercero del mundo.';
       break;
     case 'mateo':
       answer =  'Nombre de origen religioso que significa “El gran regalo de nuestro Señor”';
@@ -49,7 +50,7 @@ function getName(inputname) {
       answer = 'Significa "el fiel a Dios"';
       break;
     case 'tomas':
-      asnwer:'Tiene como significado "el hermano"';
+      answer = 'Tiene como significado "el hermano"';
       break;
     case 'thiago':
       answer = 'El significado de Thiago es "Dios nos dará recompensa".';
@@ -87,6 +88,37 @@ function getName(inputname) {
     case 'ignacio':
       answer = 'Tiene como significado "hombre que nacio en el fuego"';
       break;
+    case 'marcelo':
+      answer = 'Tiene como significado "Como el Martillo" es un nombre latin que hace referencia al dios Romano de la guerra';
+      break;
+    case 'pedro':
+      answer = 'Nombre en latin que proviene de la palabra petrus que significa "piedra"';
+      break;
+    case 'mauricio':
+      answer = 'Nombre que significa "gente del mar"';
+      break;
+    case 'francisco':
+      answer = 'Nombre que significa  "El Frances"';
+      break;
+    case 'facundo':
+      answer = 'El significado de este nombre es "El Elocuente"';
+      break;
+    case 'federico':
+      answer = 'Tiene como significado "Principe de Paz"';
+      break;
+    case 'ivan':
+      answer = 'Tiene como significado "Bendecido por Dios"';
+      break;
+      // NOMBRE MUJERES:
+    case 'noelia':
+      answer = 'Nombre que significa "armonia"';
+      break;
+    case 'micaela':
+      answer = 'Nombre hebreo que significa "Dios es Justo"';
+      break;
+    case 'mariana':
+      answer = 'Nombre hebreo que consiste de la union del nombre de Maria y de Ana que significa "la elegida llena de gracia"';
+      break;
     case 'sofia':
       answer = 'Tiene como significado "sabiduria"';
       break;
@@ -118,6 +150,5 @@ function getName(inputname) {
       answer = 'Hmm, no se encontro resultado para tu nombre';
       break;
   }
-
   return answer;
 }
